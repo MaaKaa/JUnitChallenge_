@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class UtilitiesTest {
 
     @Test
-    public void everyNthChar() {
+    public void shouldReturn_everyNthChar() {
         Utilities utilities = new Utilities();
         char[] output = utilities.everyNthChar(new char[] {'h', 'e', 'l', 'l', 'o'}, 2);
         char[] result = {'e', 'l'};
@@ -15,7 +15,15 @@ public class UtilitiesTest {
     }
 
     @Test
-    public void removePairs() {
+    public void shouldReturn_everyNthChar_when_nIsGreaterThanCharLength() {
+        Utilities utilities = new Utilities();
+        char[] output = utilities.everyNthChar(new char[] {'h', 'e', 'l', 'l', 'o'}, 6);
+        char[] result = {'h', 'e', 'l', 'l', 'o'};
+        assertArrayEquals(result, output);
+    }
+
+    @Test
+    public void should_removePairs() {
         Utilities utilities = new Utilities();
         assertEquals("Test passed", "ABCDEF", utilities.removePairs("AABCDDEFF"));
         assertEquals("ABCABDEF", utilities.removePairs("ABCCABDEEF"));
@@ -25,12 +33,12 @@ public class UtilitiesTest {
     }
 
     @Test
-    public void converter() {
+    public void shouldConvert_converter() {
         fail("Test failed");
     }
 
     @Test
-    public void nullIfOddLength() {
+    public void shouldReturn_nullIfOddLength() {
         fail("Test failed");
     }
 }
