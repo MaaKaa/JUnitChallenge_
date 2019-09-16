@@ -40,7 +40,7 @@ public class UtilitiesTest {
     @Test
     public void shouldReturn_nullIfOddLength() {
         Utilities utilities = new Utilities();
-        assertNull(null, "Marzena");
-        assertEquals("Testowanie", "Testowanie");
+        assertNull(utilities.nullIfOddLength("Marzena"));
+        assertEquals("Testowanie", utilities.nullIfOddLength("Testowanie"));
     }
 }
