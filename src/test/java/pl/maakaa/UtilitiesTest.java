@@ -34,7 +34,9 @@ public class UtilitiesTest {
 
     @Test
     public void shouldConvert_converter() {
-        fail("Test failed");
+        Utilities utilities = new Utilities();
+        assertEquals(300, utilities.converter(10, 5));
+
     }
 
     @Test
