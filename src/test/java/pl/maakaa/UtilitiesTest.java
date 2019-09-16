@@ -8,7 +8,10 @@ public class UtilitiesTest {
 
     @Test
     public void everyNthChar() {
-        fail("Test failed");
+        Utilities utilities = new Utilities();
+        char[] output = utilities.everyNthChar(new char[] {'h', 'e', 'l', 'l', 'o'}, 2);
+        char[] result = {'e', 'l'};
+        assertArrayEquals(result, output);
     }
 
     @Test
