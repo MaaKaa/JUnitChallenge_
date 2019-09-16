@@ -13,7 +13,9 @@ public class UtilitiesTest {
 
     @Test
     public void removePairs() {
-        fail("Test failed");
+        Utilities utilities = new Utilities();
+        assertEquals("Test passed", "ABCDEF", utilities.removePairs("AABCDDEFF"));
+        assertEquals("ABCABDEF", utilities.removePairs("ABCCABDEEF"));
     }
 
     @Test
