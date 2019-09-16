@@ -36,7 +36,12 @@ public class UtilitiesTest {
     public void shouldConvert_converter() {
         Utilities utilities = new Utilities();
         assertEquals(300, utilities.converter(10, 5));
+    }
 
+    @Test(expected = ArithmeticException.class)
+    public void shouldthrowArithmeticException_converter() throws Exception {
+        Utilities utilities = new Utilities();
+        utilities.converter(10, 0);
     }
 
     @Test
