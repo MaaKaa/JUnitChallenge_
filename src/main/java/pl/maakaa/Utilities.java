@@ -51,7 +51,7 @@ public class Utilities {
     }
 
     public String nullIfOddLength(String source){
-        if(source.length() % 2 ==0){
+        if(source.length() % 2 == 0){
             return source;
         }
 

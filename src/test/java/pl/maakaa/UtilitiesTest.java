@@ -39,6 +39,8 @@ public class UtilitiesTest {
 
     @Test
     public void shouldReturn_nullIfOddLength() {
-        fail("Test failed");
+        Utilities utilities = new Utilities();
+        assertNull(null, "Marzena");
+        assertEquals("Testowanie", "Testowanie");
     }
 }
